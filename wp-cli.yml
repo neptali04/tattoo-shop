@@ -1,0 +1,4 @@
+require:
+  - wp-cli/browse-command.php
+@tattoo.ink:
+  ssh: vagrant:tattoo.ink:/var/www/html
