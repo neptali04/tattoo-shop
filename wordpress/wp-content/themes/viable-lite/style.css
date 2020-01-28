@@ -11,3 +11,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: viable-lite
 Template: viable-blog
 */
+
+/** Custom Styles */
+
+button.owl-prev{
+    background-color: chartreuse;
+}
