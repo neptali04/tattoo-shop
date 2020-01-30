@@ -224,6 +224,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+set_post_thumbnail_size( 50, 50 ); // 50 pixels wide by 50 pixels tall, resize mode
 /**
  * Customizer additions.
  */
