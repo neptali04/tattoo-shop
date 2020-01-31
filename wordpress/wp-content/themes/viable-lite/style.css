@@ -13,3 +13,6 @@ Template: viable-blog
 */
 
 /** Custom Styles */
+body {
+    color: red;
+}

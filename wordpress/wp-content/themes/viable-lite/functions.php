@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! function_exists( 'viable_lite_enqueue_styles' ) ) {
+// if ( ! function_exists( 'viable_lite_enqueue_styles' ) ) {
 	/**
 	 * Enqueue Styles.
 	 *
@@ -32,7 +32,7 @@ if ( ! function_exists( 'viable_lite_enqueue_styles' ) ) {
 		
 		
 	}
-}
+// }
 
 // Add enqueue function to the desired action.
 add_action( 'wp_enqueue_scripts', 'viable_lite_enqueue_styles', 20 );
