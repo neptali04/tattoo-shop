@@ -1,0 +1,24 @@
+/*
+ * Stellarnav.js 1.2.0
+ * jQuery responsive multi-level dropdown menu designed to do most of the heavy CSS work for you.
+ * Copyright (c) 2016 Vinny Moreira - http://vinnymoreira.com
+ * Released under the MIT license
+ */
+
+
+/* all nav */
+
+.primary_navigation.dark ul ul {
+
+    background: $primary_color;
+}
+
+.mastheader.light .primary_navigation.dark .menu-toggle {
+
+    color:$primary_color;
+}
+
+.primary_navigation.mobile.dark ul {
+
+    background:$primary_color;
+}

@@ -1,0 +1,1617 @@
+
+
+body {
+    
+    line-height: $body_line_height;
+    font-weight: $body_font_weight;
+    font-size: $body_font_size;
+    color: $primary_color;
+    font-family: $secondary_font_family;
+    letter-spacing:$body_letter_spacing;
+    @include transation_delay();
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+
+a {
+
+    color: $primary_color;
+    text-decoration: none;
+    @include transation_delay();
+}
+
+a:hover {
+
+    color: $secondary_color;
+}
+
+
+
+// buttons 
+
+a.btn_general {
+    
+    border:1px solid $primary_color;
+
+    &:hover {
+
+        border-color:$secondary_color;
+        background:$secondary_color;
+        color:$white;
+    } 
+}
+
+
+.page_wrap {
+    background:$white;
+}
+
+
+.mask {
+ 
+    @include mask();
+}
+
+
+// Image Hover Animation
+
+
+.imghover img {
+    
+    @include transation_delay;
+}
+
+.imghover:hover img  {
+
+   @include scale();
+}
+
+// Post Metas
+
+
+
+.post_meta li {
+
+    a {
+        
+        color: $primary_color;
+    }
+
+    a:hover {
+
+       color: $secondary_color;
+   }
+}
+
+ul.post-categories {
+
+
+    li {
+
+        a {
+
+            color:$white;
+            font-size:12px;
+            border:1px solid $secondary_color;
+            background:$secondary_color;
+            
+            &:hover {
+
+                color:$white;
+                border-color:$primary_color;
+                background:$primary_color;
+            }    
+        }
+    }       
+}
+
+.social_icons_list li a {
+    
+    color:$primary_color;
+
+    &:hover {
+
+        color:$secondary_color;
+    }
+}
+
+.section_title h2 {
+
+    font-size:$typo_large; 
+}
+
+.section_title h2::after,
+.post_title h2::after {
+
+    content:'';
+    border-bottom:2px solid $secondary_color;
+}
+
+
+// page title 
+
+.lined_page_title {
+    
+    @extend .section_title;
+    
+}
+
+.lined_page_title h2,
+.lined_page_title h3 {
+
+    font-size:$typo_large;
+
+    span {
+
+        color:$secondary_color;
+    }
+}
+
+.post_title h2::after, 
+.post_title h3::after, 
+.post_title h4::after {
+
+    content:'';
+    border-bottom:2px solid $secondary_color;
+}
+
+// Post formate icon ( Display post formate icon at Front-End )
+
+
+.is_postformate {
+
+    @include pos_absolute_topnleft(); // mixins alt for poition absolute 
+}
+
+.is_postformate a {
+    
+    color:$white;
+    border:1px solid $white;
+    
+    &:hover {
+
+        border-color:$secondary_color;
+        background:$secondary_color;
+        color:$white;
+    }
+}
+
+
+// Excerpts 
+
+.excerpt p {
+
+    color:$special_text_color;
+}
+
+
+// Back to top
+
+#toTop {
+
+    
+    background: $secondary_color;
+    color: $white;
+    
+    @include transation_delay(); 
+
+}
+
+
+#toTop:hover {
+
+    background: $primary_color;
+}
+
+
+// Owl navs 
+
+.owl-carousel .owl-nav {
+
+    button.owl-prev, 
+    button.owl-next {
+
+    
+    background:$secondary_color;
+    
+    @include transation_delay();
+
+    i {
+
+         color:$white;
+         
+    }
+
+    }
+}
+
+.vb_stickhead {
+    
+    
+    @include transation_delay();
+}
+
+
+/*
+***************************************************************
+*
+* ## Header styles  
+*
+***************************************************************
+*/
+
+
+.mastheader .header_top {
+
+    background-color:$primary_color;
+}
+
+.mastheader .header_top_entry .social_icons_list li a {
+
+    color:$white;
+
+    &:hover {
+
+        color:$secondary_color;
+    }
+}
+
+
+// logo area
+ 
+
+.mastheader .logo h1 a {
+
+    color:$primary_color;
+}
+
+.mastheader .logo a {
+
+    
+    &:hover {
+
+        color:$secondary_color;
+    }
+}
+
+.mastheader .logo .site-description {
+
+    color:$special_purpose_color;
+}
+
+
+// light header case
+
+
+.mastheader.light .primary_navigation.dark li a {
+
+    color:$primary_color;
+
+    &:hover {
+
+        color:$secondary_color;
+    }
+}
+
+.mastheader.light .header_top,
+.mastheader.light .primary_navigation.dark ul ul {
+
+    background:$white;
+}
+
+
+.mastheader.light .header_top_entry .social_icons_list li a {
+
+    color:$primary_color;
+
+    &:hover {
+
+        color:$secondary_color;
+    }
+}
+
+
+// Header search 
+
+
+
+
+
+.header_search form {
+   
+   background: $white;
+   border-top: 3px solid $secondary_color;
+   @include drop_shadow(); 
+}
+
+.header_search input[type="search"],
+.widget_product_search input[type="search"] {
+        
+    
+    border-top: 1px solid $border_color;
+    border-bottom: 1px solid $border_color;
+    border-left: 1px solid $border_color;
+      
+}
+
+.header_search input[type="submit"],
+.widget_product_search form button {
+
+    
+    background: $secondary_color;
+    color: $white;
+    
+}
+
+.mastheader.header_style3 .secondary_nav ul li a {
+
+    color:$white;
+    
+}
+
+.mastheader.header_style3 .main_navigation {
+
+    background: $primary_color;
+}
+
+
+// Case light header 
+
+
+.mastheader.light.header_style3 .secondary_nav ul li a {
+
+    color:$primary_color;
+
+    &:hover {
+
+        color:$secondary_color;
+    }
+}
+
+
+
+/*
+----------------------------------------------------------------
+*
+* # Header layout four
+*
+----------------------------------------------------------------
+*/
+
+
+
+
+.header_style4 {
+
+    @extend .header_style3;     // Header 4 extends header layout 3 styles
+}
+
+.header_style4 .site_idty_wrap .logo {
+    
+    @include position_absolute(50%,unset,0,0);
+
+}
+
+.mastheader.header_style4 .logo h1 {
+    
+    display:inline-block;
+    font-size:82px;
+
+    a {
+
+        color:$white;
+    }
+}
+
+.mastheader.header_style4  .logo .site-description {
+
+    color:$white; 
+}
+
+.vb_banner .card_content {
+    
+    @include position_absolute(50%,unset,0,0);
+}
+
+.vb_banner ul.post-categories li a {
+
+    &:hover {
+
+        color:$secondary_color;
+        background:transparent;
+    }
+}
+
+.vb_banner .post_title h2::after {
+
+    content:'';
+    border-bottom:2px solid $white;
+} 
+
+.vb_banner .post_title a {
+
+    color:$white;
+
+    &:hover {
+
+        color:$secondary_color;
+    }
+}
+
+.vb_banner .the_permalink a.btn_general {
+
+    border:2px solid $white;
+    color:$white;
+
+    &:hover {
+
+        background:$white;
+        color:$secondary_color;
+    }
+}
+
+.vb_banner .vb_banner_style_3 ul.post-categories li a,
+.vb_banner .vb_banner_style_3 .post_title a {
+
+    color:$primary_color;
+
+    &:hover {
+
+        color:$secondary_color;
+    }
+}
+
+.vb_banner .vb_banner_style_3 .the_permalink a.btn_general {
+
+    color:$white;
+    background:$primary_color;
+    border-color:$primary_color;
+
+    &:hover {
+   
+        border-color:$secondary_color;
+        background: $secondary_color;
+        color:$white;
+    }
+}
+
+
+// Owl navs 
+
+
+.vb_banner_style_3.owl-carousel .owl-nav button.owl-prev, 
+.vb_banner_style_3.owl-carousel .owl-nav button.owl-next {
+
+    background:$white;
+    
+    i {
+
+        color:$primary_color;
+    }
+}
+
+
+
+/*
+----------------------------------------------------------------
+*
+* # Banner layout four 
+*
+----------------------------------------------------------------
+*/
+
+.vb_banner .vb_banner_style_4 .card_content {
+
+    padding:0 15px;
+    @include position_absolute(87%,unset,0,0);
+    text-align:left;
+}
+
+
+.recent_posts_holder .first_article .post_title h2,
+.recent_posts_holder .first_article .post_title h3 {
+
+    margin-bottom:20px;
+    font-size:$typo_large;
+}
+.recent_posts_holder .first_article .extra {
+
+    border-top:1px dotted $border_color;
+    border-bottom:1px dotted $border_color;
+}
+
+.recent_posts_holder .first_article .the_permalink a {
+
+    background: $secondary_color;
+    color:$white;
+
+    &:hover {
+
+        background:$primary_color;
+        color:$white;
+    }
+}
+
+
+/*
+***************************************************************
+*
+* ## Footer 
+*
+***************************************************************
+*/
+
+footer {
+    
+    background-color:$footer_bg; // dark footer 
+}
+
+footer.light {
+
+    background-color:$section_bg; // light footer 
+}
+
+footer .widget .widget-title h3 {
+
+    font-size:$typo_medium;
+}
+
+footer .widget .widget-title h3::after {
+    
+    content:'';
+    border-bottom: 3px solid $secondary_color;
+}
+
+
+.vb_topfooter .social_icons_list li a {
+    
+    color:$footer_section_links_color;
+
+    &:hover {
+
+        color:$white;
+    }
+}
+
+// Middle footer ( widget area )
+
+.vb_midfooter {
+
+    border-top:1px solid $border_color; 
+}
+
+
+// Bottom footer ( Copyright & navigation )
+
+
+footer .vb_bottomfooter {
+    
+    background:$footer_bottom_bg;
+}
+
+footer.dark .vb_bottomfooter .copyright p {
+
+    color:$white;
+    
+}
+
+footer .vb_bottomfooter .footer_nav ul li a {
+
+    color:$white;
+
+    &:hover {
+
+        color:$secondary_color;
+    }
+}
+
+/*
+----------------------------------------------------------------
+*
+* # Dark footer 
+*
+----------------------------------------------------------------
+*/
+
+footer.dark .vb_midfooter {
+
+    border-top:1px solid $footer_section_border;
+}
+
+footer.dark .widget .widget-title h3 {
+
+    color:$footer_heading_color;
+}
+
+footer.dark .widget h1,
+footer.dark .widget h2,
+footer.dark .widget h3,
+footer.dark .widget h4,
+footer.dark .widget h5,
+footer.dark .widget h6,
+footer.dark .widget p,
+footer.dark .widget strong,
+footer.dark .widget cite,
+footer.dark .widget span,
+footer.dark .widget sup,
+footer.dark .widget sub,
+footer.dark .widget li,
+footer.dark .widget table,
+footer.dark .widget div {
+
+    color:$footer_section_text_color;
+}
+
+footer.dark .widget a,
+footer.dark .vb_lastestpost_widget .post_meta li a {
+
+    color:$footer_section_links_color;
+
+    &:hover {
+
+        color:$secondary_color;
+    }
+}
+
+// Instafeed widget 
+
+footer.dark .vb_instafeed_widget .follow a {
+
+    border-color:$footer_section_border;
+    background:$footer_special_bgcolor;
+
+    &:hover {
+
+        background:$secondary_color;
+        border-color:$secondary_color;
+        color:$white;
+    }
+}
+
+
+// Custom category widget 
+
+footer.dark .vb_cus_cats_widget ul li a {
+
+    color:$primary_color;
+
+    &:hover {
+
+        color:$white;
+    }
+}
+
+// Hover color on footer ancours ( alt case )
+
+footer.dark .vb_topfooter .social_icons_list li a:hover {
+
+    color:$secondary_color;
+}
+
+
+// Selectric drop down styles 
+
+footer.dark .selectric,
+footer.dark .selectric-items {
+
+    border-color:$footer_section_border;
+}
+
+footer.dark .selectric .button {
+
+    color:$footer_section_text_color;
+    background:$footer_special_bgcolor;
+}
+
+footer.dark .selectric-items li.highlighted,
+footer.dark .selectric-items .selectric-scroll {
+
+    background:$footer_special_bgcolor;
+}
+
+footer.dark .selectric-items li:hover {
+
+    background:$secondary_color;
+}
+
+
+// Dark footer all default widget 
+
+footer.dark .widget_archive li, 
+footer.dark .widget_categories li, 
+footer.dark .widget_recent_entries li, 
+footer.dark .widget_meta li, 
+footer.dark .widget_recent_comments li, 
+footer.dark .widget_rss li, 
+footer.dark .widget_pages li, 
+footer.dark .widget_nav_menu li a, 
+footer.dark .widget_product_categories li {
+
+    border-color:$footer_section_border;
+}
+
+footer.dark .widget_tag_cloud .tagcloud a {
+
+    background:$footer_special_bgcolor;
+    color:$footer_section_links_color;
+    font-weight: 500;
+
+    &:hover {
+
+        background:$secondary_color;
+        color:$white;
+    }
+}
+
+
+footer.dark .calendar_wrap caption {
+
+    background:$footer_special_bgcolor;
+}
+
+footer.dark .calendar_wrap table th,
+footer.dark .calendar_wrap table td,
+footer.dark .widget_categories li,
+footer.dark .widget_archive li { 
+
+    border-color:$footer_section_border;
+}
+
+
+/*
+----------------------------------------------------------------
+*
+* # Light footer 
+*
+----------------------------------------------------------------
+*/
+
+
+footer.light .vb_topfooter .social_icons_list li a {
+
+    color:$primary_color;
+
+    &:hover {
+
+        color:$secondary_color;
+    }
+}
+
+footer.light .vb_bottomfooter {
+    
+    background:$light_footer_bg;
+ }
+
+
+// Tags cloud
+
+footer.light .widget_tag_cloud .tagcloud a {
+
+    &:hover {
+
+        background:$secondary_color;
+    }
+}
+
+footer.light .vb_bottomfooter .footer_nav ul li a {
+
+    color:$primary_color;
+
+    &:hover {
+
+        color:$secondary_color;
+    }
+}
+
+
+
+/*
+***************************************************************
+*
+* ## Sidebar Widgets ( Custom widgets )
+*
+***************************************************************
+*/
+
+
+
+
+.widget .widget-title h3 {
+    
+    font-family:$secondary_font_family;
+    background:$primary_color;
+    color:$white;
+    
+}
+
+
+/*
+----------------------------------------------------------------
+*
+* # Author widget ( Custom widget )
+*
+----------------------------------------------------------------
+*/
+
+
+
+
+.vb_author_widget .author_bio a {
+
+    
+    border-bottom:1px solid $secondary_color;
+}
+
+
+
+/*
+----------------------------------------------------------------
+*
+* # Latest post widget 
+*
+----------------------------------------------------------------
+*/
+
+
+.vb_lastestpost_widget .post_details h4 {
+
+    font-family:$secondary_font_family;
+    font-size:$body_font_size;
+}
+
+.vb_lastestpost_widget .post_meta li a {
+
+    color:$special_purpose_color;
+
+    &:hover {
+
+        color:$secondary_color;
+    }
+}
+
+.vb_pagination .pagi_style1 .nav-links a {
+
+    border:2px solid $border_color;
+
+    &:hover {
+
+        border-color:$secondary_color;
+        background:$secondary_color;
+        color:$white;
+    }
+}
+
+
+
+/*
+----------------------------------------------------------------
+*
+* # Pagination style 2
+*
+----------------------------------------------------------------
+*/
+
+
+
+.vb_pagination .pagi_style2 .nav-links a,
+.vb_pagination .pagi_style2 .nav-links span {
+    
+
+    border:1px solid $border_color;
+    
+    
+    &:hover {
+
+        border-color:$secondary_color;
+        background:$secondary_color;
+        color:$white;
+    }
+}
+
+.vb_pagination .pagi_style2 .nav-links span.current {
+
+    background:$secondary_color;
+    border-color:$secondary_color;
+    color:$white;
+}
+
+
+
+/*
+----------------------------------------------------------------
+*
+* # Pagination style 3  
+*
+----------------------------------------------------------------
+*/
+
+
+.vb_pagination .pagi_style3 .nav-links {
+
+    border:1px solid $border_color;
+}
+
+
+/*
+----------------------------------------------------------------
+*
+* # Breadcrumb style one 
+*
+----------------------------------------------------------------
+*/
+
+.breadtrails_style1 ul li a {
+
+   margin-right:5px;
+   color:$special_purpose_color;
+
+   &:hover {
+
+        color:$secondary_color;
+   } 
+}
+
+
+/*
+----------------------------------------------------------------
+*
+* # Breadcrumb style two 
+*
+----------------------------------------------------------------
+*/
+
+.breadtrails_style2 {
+
+    @extend .breadtrails_style1;
+}
+
+.breadtrails_style3 ul li a {
+
+    color:$primary_color;
+
+    &:hover {
+
+        color:$secondary_color;
+    }
+}
+
+
+/*
+----------------------------------------------------------------
+*
+* # Breadcrumb style two 
+*
+----------------------------------------------------------------
+*/
+
+.breadtrails_style3 {
+
+    @extend .breadtrails_style1;
+
+    background:$section_bg;
+}
+
+.vb_breadcrumb.breadtrails_style3 {
+
+    margin-bottom:30px;
+}
+
+
+
+/*
+***************************************************************
+*
+* ## 404 error page 
+*
+***************************************************************
+*/
+
+
+.errorpage_entry .error_head h2 {
+
+    color:$secondary_color;
+}
+
+.errorpage_entry .error_head h3 {
+
+    
+    font-size:$typo_big;
+}
+
+.error_action a.btn_general {
+
+    border:2px solid $primary_color;
+
+    &:hover {
+
+        border-color:$secondary_color;
+    }
+}
+
+
+/*
+***************************************************************
+*
+* ## Nothing found page 
+*
+***************************************************************
+*/
+
+.nf_search {
+
+    @extend .header_search;
+    
+}
+
+
+
+/*
+***************************************************************
+*
+* ## Search page  
+*
+***************************************************************
+*/
+
+
+.searchpage_contents_holder .card ul.post-categories {
+
+    margin-bottom:20px;
+}
+
+
+/*
+***************************************************************
+*
+* ## Archive/List page  
+*
+***************************************************************
+*/
+
+// No custom styles cheers :)  
+
+
+/*
+***************************************************************
+*
+* ## Page ( standard page )  
+*
+***************************************************************
+*/
+
+
+// Here we style all components that comes from visual & text editor
+
+.editor_contents {
+    
+    fieldset {
+
+        border: 1px solid $border_color;
+        
+    }
+
+    td, th,
+    td, th, .mce-item-table, .mce-item-table td, .mce-item-table th, .mce-item-table caption {
+
+        
+        border: 1px solid $border_color;
+    }
+
+
+   // Typo for editor 
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        
+        color: $primary_color;
+    }
+
+    abbr,
+    acronym {
+        border-bottom: 1px dotted $border_color;
+    }
+
+    
+}
+
+
+
+/*
+***************************************************************
+*
+* ## Post page 
+*
+***************************************************************
+*/
+
+
+.postpage_entry .post_meta li a,
+.postpage_entry .post_meta li {
+
+    color:$special_purpose_color;
+}
+
+.postpage_entry .post_meta li a:hover {
+
+    color:$secondary_color;
+}
+
+
+// Tags styles 
+
+
+.post_tags a {
+     
+    background:$secondary_color;
+    color:$white;  
+}
+
+.post_tags a::before {
+
+    content:'\f02e';
+    @include position_absolute(50%, unset, 10px, unset);
+}
+
+
+.post_tags a:hover {
+
+    background:$primary_color;
+}
+
+
+
+// Post sharing 
+
+
+
+.post_sharing span:after,
+.related_posts .section_title span::after {
+
+    content:'';
+    border-bottom: 2px solid $secondary_color;
+}
+
+.post_sharing ul li a {
+
+    border:1px solid $border_color;
+}
+
+
+// Author box 
+
+
+.author_box {
+
+    border:1px solid $border_color;
+}
+
+.author_box .author_thumb img {
+
+    
+    border: 3px solid $border_color;
+}
+
+
+.post-navigation .nav-links .nav-previous a:hover,
+.post-navigation .nav-links .nav-next a:hover {
+
+    color: $secondary_color;
+}
+
+.related_posts .vb_rp_grid_style ul.post-categories li a {
+
+    
+    color:$secondary_color;
+
+    &:hover {
+
+        color:$primary_color;
+    }
+}
+
+/*
+***************************************************************
+*
+* ## All default widget  
+*
+***************************************************************
+*/
+
+.widget_archive li,
+.widget_categories li,
+.widget_recent_entries li,
+.widget_meta li,
+.widget_recent_comments li,
+.widget_rss li,
+.widget_pages li,
+.widget_nav_menu li a,
+.widget_product_categories li,
+.woocommerce-widget-layered-nav ul li,
+.woocommerce .woocommerce-widget-layered-nav-list .woocommerce-widget-layered-nav-list__item {
+
+    
+    border-bottom: 1px solid $border_color;
+    
+}
+
+.widget_archive a,
+.widget_categories a,
+.widget_recent_entries a,
+.widget_meta a,
+.widget_recent_comments li,
+.widget_rss li,
+.widget_pages li,
+.widget_nav_menu a,
+.widget_product_categories a,
+.woocommerce-widget-layered-nav ul li a {
+
+    @include transation_delay();
+}
+
+
+// Hover effect on widgets
+
+
+.widget_archive a:hover,
+.widget_categories a:hover,
+.widget_recent_entries a:hover,
+.widget_meta a:hover,
+.widget_product_categories a:hover,
+.widget_rss li a:hover,
+.widget_pages li a:hover,
+.widget_nav_menu li a:hover,
+.woocommerce-widget-layered-nav ul li a:hover {
+
+    color: $third_color;
+}
+
+
+.widget_product_categories ul li ul {
+
+    border-top:1px solid $border_color;
+}
+
+
+
+/*
+=======================================
+=
+= Nav menus widget
+=
+===============================================
+*/
+
+
+
+
+/*
+=======================================
+=
+= Recent posts widget 
+=
+===============================================
+*/
+
+
+
+.widget_recent_entries .post-date {
+
+    color: $special_purpose_color;
+}
+
+/*
+=======================================
+=
+= Rss widget
+=
+===============================================
+*/
+
+
+
+.widget_rss .widget-title h3 a {
+
+    color:$white;
+
+    &:hover {
+
+        color:$third_color;
+    }
+}
+
+.widget_rss ul li a {
+
+    color:$secondary_color;
+
+    &:hover {
+
+        color:$third_color;
+    }
+}
+
+
+
+/*
+=======================================
+=
+= Search widget 
+=
+===============================================
+*/
+
+
+.widget_search,
+.widget_product_search {
+
+    @extend .header_search;
+}
+
+/*
+=======================================
+=
+= Calender widget
+=
+===============================================
+*/
+
+
+.calendar_wrap caption {
+
+    background: none repeat scroll 0 0 $secondary_color;
+    color: $white;
+}
+
+
+.calendar_wrap table th {
+
+    border: 1px solid $border_color;
+}
+
+.calendar_wrap table td {
+
+    border: 1px solid $border_color;
+  
+}
+
+
+.widget_tag_cloud .tagcloud a {
+
+    &:hover {
+        
+        color:$white;
+        background:$third_color;
+    }
+}
+
+
+/*
+========================================
+=
+= Woocommerce cart widget
+=
+====================================================
+*/
+
+.woocommerce ul.cart_list, 
+.woocommerce ul.product_list_widget {
+
+    @include flex_row_alt();
+}
+
+.woocommerce .widget_shopping_cart .cart_list li, 
+.woocommerce.widget_shopping_cart .cart_list li,
+.woocommerce ul.product_list_widget li {
+
+    @include flex_col(100%);
+    border-bottom: 1px solid $border_color;
+}
+
+
+.woocommerce.widget_shopping_cart .cart_list li a.remove {
+
+    @include position_absolute(50%,unset,0,unset);
+
+}
+
+
+.woocommerce .woocommerce-widget-layered-nav-list .woocommerce-widget-layered-nav-list__item::before {
+    
+    content:"\f111";
+    
+    color:$primary_color;
+
+}
+
+
+/*
+============================================
+=
+= Woocommerce filter by price widget
+=
+===========================================================
+*/
+
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle, 
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range {
+
+    background-color:$secondary_color;
+}
+
+
+
+/*
+***************************************************************
+*
+* ## Comment box 
+*
+***************************************************************
+*/
+
+
+
+
+#comments h2.comments-title {
+
+    font-size: $typo_big;
+}
+
+#comments h2.comments-title:after {
+
+    content: '';
+    border-bottom: 3px solid $secondary_color;
+}
+
+#comments div#respond h3#reply-title::after {
+
+    content: '';
+    border-bottom: 3px solid $secondary_color;
+}
+
+
+#comments form label {
+
+    color: $primary_color;
+}
+
+#comments form input,
+#comments form textarea {
+
+    color: $special_purpose_color;
+    border: 1px solid $border_color;
+}
+
+#comments form input[type="submit"] {
+
+    background: $secondary_color;
+    color: $white;
+    border: 1px solid $secondary_color;
+}
+
+#comments form input[type="submit"]:hover {
+
+    background: $primary_color;
+    color: $white;
+    border: 1px solid $primary_color;
+}
+
+#comments ol.comment-list li {
+
+    border: 1px solid $border_color;
+}
+
+#comments ol.comment-list li article footer.comment-meta .comment-author.vcard img {
+
+    border: 2px solid $border_color;
+}
+
+#comments ol.comment-list li article footer.comment-meta .comment-author.vcard b a,
+#comments ol.comment-list li article footer.comment-meta .comment-author.vcard b,
+#comments ol.comment-list li article footer.comment-meta .comment-author.vcard span {
+
+    
+    color: $special_purpose_color !important;
+    
+}
+
+#comments ol.comment-list li article footer.comment-meta .comment-metadata a {
+
+    
+    color: $special_purpose_color;
+}
+
+
+
+#comments ol.comment-list li article .comment-content p a {
+
+    color: $primary_color;
+}
+
+#comments ol.comment-list li article .reply a {
+
+    
+    color: $special_purpose_color;
+    
+}
+
+
+/*
+***************************************************************
+*
+* ## Contact form 7
+*
+***************************************************************
+*/
+
+
+
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="url"],
+.wpcf7 input[type="password"],
+.wpcf7 input[type="search"],
+.wpcf7 textarea,
+.wpcf7 select {
+
+    border: 1px solid $border_color;
+
+}
+
+.wpcf7 input[type="submit"],
+.wpcf7 input[type="button"] {
+
+    background-color: $secondary_color;
+    border: 1px solid $secondary_color;
+    color: $white;
+    @include transation_delay();
+}
+
+.wpcf7 input[type="submit"]:hover,
+.wpcf7 input[type="button"]:hover {
+
+    background: $primary_color;
+    border: 1px solid $primary_color;
+}
+
+
+
+
+.mastheader.header_style3 .secondary_nav ul li a {
+    
+    font-weight: 400;
+    font-size: 11px;
+    
+}
+
+a.btn_general {
+    
+    font-weight: 600;
+}
+
+.recent_posts_holder .first_article .extra {
+    
+    margin-top: 0;
+}
+
+.recent_posts_holder article .excerpt {
+    
+    margin-bottom: 30px;
+}
+
+.widget_search form {
+    
+    border-top: none;
+}
+
+.posted_read_time span {
+    
+    color: $secondary_color
+}

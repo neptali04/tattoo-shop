@@ -1,0 +1,491 @@
+
+/*
+***************************************************************
+*
+* 1. Woocommerce General
+*
+***************************************************************
+*/
+
+
+// Body woocommerce 
+
+
+body.woocommerce-page,
+body.woocommerce {
+
+    color:$woo-body-color;
+}
+
+// Woocommerce Forms
+
+
+
+.woocommerce input[type="text"],
+.woocommerce input[type="email"],
+.woocommerce input[type="number"],
+.woocommerce input[type="tel"],
+.woocommerce input[type="password"],
+.woocommerce textarea,
+.woocommerce-page input[type="text"],
+.woocommerce-page input[type="email"],
+.woocommerce-page input[type="number"],
+.woocommerce-page input[type="tel"],
+.woocommerce-page input[type="password"],
+.woocommerce-page textarea {
+    
+    border:1px solid $woo-border-color;
+}
+
+
+
+// Woocommerce buttons 
+
+
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button ,
+.woocommerce .wc-forward,
+.woocommerce a.added_to_cart,
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt {
+    
+    background-color: $woo-buttons-color;
+}
+
+
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce .wc-forward:hover,
+.woocommerce a.added_to_cart:hover,
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover, 
+.woocommerce button.button.alt:hover, 
+.woocommerce input.button.alt:hover {
+
+    background:$woo-button-hover-color;
+    color:$white;
+}
+
+
+// Price 
+
+.woocommerce div.product p.price ins, 
+.woocommerce div.product span.price ins,
+.woocommerce div.product p.price, 
+.woocommerce div.product span.price {
+
+    
+    color:$woo-secondary-color;
+}
+
+
+// Notification 
+
+
+.woocommerce-message {
+
+    border-top-color:$woo-secondary-color
+}
+
+.woocommerce-message:before,
+.woocommerce-info:before,
+.woocommerce-error:before {
+    
+    color: $woo-secondary-color;
+}
+
+
+.woocommerce-error, 
+.woocommerce-info, 
+.woocommerce-message {
+
+    margin: 10px 0 50px 0;
+    border-top-color:$woo-secondary-color;
+    color:$woo-body-color;
+}
+
+/*
+***************************************************************
+*
+* 2. Woocommerce Componenets
+*
+***************************************************************
+*/
+
+
+.woocommerce nav.woocommerce-pagination ul li a, 
+.woocommerce nav.woocommerce-pagination ul li span {
+
+
+    color:$primary_color;
+} 
+
+.woocommerce nav.woocommerce-pagination ul li span.current {
+
+    background:$woo-secondary-color;
+    color:$white;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a:hover {
+
+    background:$woo-third-color;
+    color:$white;
+}
+
+
+
+
+/*
+***************************************************************
+*
+* 3. Woocommerce products at front page
+*
+***************************************************************
+*/
+
+.woocommerce ul.products li.product .price {
+
+    color:$secondary_color;
+    
+}
+
+
+/*
+===================================================
+=
+=  Shop page
+=
+=====================================================================
+*/
+
+
+.woocommerce-products-header {
+
+    margin-bottom:$woo-inner-gap-spacing;
+}
+
+
+
+.woocommerce .woocommerce-ordering {
+
+    margin-bottom:$woo-outer-section-spacing;
+    
+
+}
+
+
+
+.woocommerce ul.products li.product .onsale,
+.woocommerce span.onsale {
+    
+    
+    background:$woo-on-sale-color;
+    color:$white;
+}
+
+
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+
+    background:$woo-special-color;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li,
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after, 
+.woocommerce div.product .woocommerce-tabs ul.tabs li::before,
+.woocommerce div.product .woocommerce-tabs ul.tabs::before,
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+
+    border-color:$woo-border-color;
+}
+
+.woocommerce table.shop_attributes {
+
+    border-top:1px solid $woo-border-color;
+}
+
+.woocommerce table.shop_attributes th,
+.woocommerce table.shop_attributes td {
+
+    border-bottom:1px solid $woo-border-color;
+}
+
+
+
+.woocommerce #review_form #respond textarea {
+
+    border:1px solid $woo-border-color;
+}
+
+.woocommerce #reviews #comments ol.commentlist li .comment-text {
+
+    border-color:$woo-border-color;
+}
+
+
+
+.woocommerce .woocommerce-cart-form table.shop_table {
+
+    border-color:$woo-border-color;
+}
+
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+
+    
+    border-color:$woo-border-color;
+
+}
+
+// Checkout page coupon & info bar
+
+.woocommerce-form-coupon-toggle .woocommerce-info a {
+
+    color:$woo-secondary-color;
+}
+
+.woocommerce-form-coupon-toggle .woocommerce-error, 
+.woocommerce-form-coupon-toggle .woocommerce-info, 
+.woocommerce-form-coupon-toggle .woocommerce-message {
+
+    background:$woo-section-bg-color;
+}
+
+.woocommerce form.checkout_coupon {
+
+    
+    background:$woo-section-bg-color;
+    border-color:$woo-border-color;
+}
+
+.woocommerce-page form.checkout .col2-set, 
+.woocommerce-page form.checkout .col2-set {
+
+    @include flex_row();
+}
+
+.woocommerce .col2-set .col-1, 
+.woocommerce-page .col2-set .col-1,
+.woocommerce .col2-set .col-2, 
+.woocommerce-page .col2-set .col-2 {
+
+    @include flex_col(100%);
+
+}
+
+
+.woocommerce-page form.checkout .col2-set .col-1,
+.woocommerce-page form.checkout .col2-set .col-2 {
+
+    background:$woo-section-bg-color;
+}
+
+
+// Shippping details 
+
+
+.woocommerce-page.woocommerce-checkout #customer_details textarea {
+
+    border:1px solid $woo-border-color;
+
+}
+
+
+// Your order review 
+
+
+
+// Payment option 
+
+
+#add_payment_method #payment ul.payment_methods, 
+.woocommerce-cart #payment ul.payment_methods, 
+.woocommerce-checkout #payment ul.payment_methods,
+#add_payment_method #payment, 
+.woocommerce-cart #payment, 
+.woocommerce-checkout #payment {
+
+    background:$woo-section-bg-color;
+}
+
+
+#add_payment_method #payment ul.payment_methods, 
+.woocommerce-cart #payment ul.payment_methods, 
+.woocommerce-checkout #payment ul.payment_methods {
+
+    border-bottom:1px solid $woo-border-color;
+}
+
+.woocommerce-terms-and-conditions-wrapper p a {
+
+    color:$primary_color;
+}
+
+/*
+===================================================
+=
+=  Order successful page
+=
+=====================================================================
+*/
+
+
+.woocommerce ul.order_details {
+
+    border:1px solid $woo-border-color;
+    @include flex_row_alt();
+   
+}
+
+.woocommerce ul.order_details li {
+
+    border-bottom:1px solid $woo-border-color;
+    @include flex_col(100%);
+
+}
+
+.woocommerce table.shop_table {
+
+     border-color:$woo-border-color;
+}
+
+.woocommerce table.shop_table tbody th, 
+.woocommerce table.shop_table tfoot td, 
+.woocommerce table.shop_table tfoot th {
+
+    border-color:$woo-border-color;
+
+}
+
+
+.woocommerce .woocommerce-columns--addresses.col2-set .col-1,
+.woocommerce .woocommerce-columns--addresses.col2-set .col-2 {
+    
+    @include flex_col(100%);
+
+}
+
+.woocommerce .woocommerce-columns--addresses.col2-set .col-1 {
+
+    margin-bottom:30px;
+}
+
+.woocommerce .woocommerce-customer-details address {
+
+    border-color:$woo-border-color;
+ 
+}
+
+
+
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul {
+
+    
+    background:$woo-section-bg-color;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li a {
+
+    color:$primary_color;
+   
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li a::after {
+
+    content:'/';
+    
+    color:$primary_color;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li.is-active a {
+
+    color:$woo-secondary-color;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content {
+
+    border: 1px solid $woo-border-color;
+}
+
+
+.woocommerce table.shop_table td {
+
+    border-color:$woo-border-color;
+}
+
+.woocommerce-account .woocommerce table.my_account_orders .button {
+
+    color:$white;
+}
+
+
+.woocommerce-MyAccount-content .woocommerce-Addresses .col-1,
+.woocommerce-MyAccount-content .woocommerce-Addresses .col-2 {
+
+    border:1px solid $woo-border-color;
+}
+
+// Account details tab 
+
+/*
+===================================================
+=
+=  Login / Register page 
+=
+=====================================================================
+*/
+
+
+.woocommerce form.checkout_coupon, 
+.woocommerce form.login, 
+.woocommerce form.register {
+
+    border-color:$woo-border-color;
+
+ }
+
+
+.woocommerce-form-login .woocommerce-LostPassword a {
+
+    color:$primary_color;
+  
+}
+
+
+
+
+
+
+/*
+===================================================
+=
+=  WooCommerce responsive
+=
+=====================================================================
+*/
+
+
+@media ( max-width:650px ) {
+
+
+    .woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+
+        border-bottom-color:$woo-border-color;
+    }
+
+}
+
+
+
+
+
+
+
+

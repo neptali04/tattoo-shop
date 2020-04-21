@@ -1,0 +1,67 @@
+# Copyright (C) 2019 ultra-lite-blog
+# This file is distributed under the same license as the ultra-lite-blog package.
+msgid ""
+msgstr ""
+"Project-Id-Version: ultra-lite-blog\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Everestthemes.com <contact@everestthemes.com>\n"
+"Last-Translator: Everestthemes <contact@everestthemes.com>\n"
+"Report-Msgid-Bugs-To: https://everestthemes.com/support/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: functions.php:64
+msgid "Top Header Menu"
+msgstr ""
+
+#. translators: 1: Total Time 2: Time Unit
+#: functions.php:114
+msgid "Read Time: %1$s %2$s"
+msgstr ""
+
+#: functions.php:132
+msgid "Enable Child Header"
+msgstr ""
+
+#: functions.php:133
+msgid "On enabling this option, header of parent theme will not be shown."
+msgstr ""
+
+#: functions.php:145
+msgid "Enable Child Banner"
+msgstr ""
+
+#: functions.php:146
+msgid "On enabling this option, banner of parent theme will not be shown."
+msgstr ""
+
+#: header.php:25
+msgid "Skip to content"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by Merriweather, translate this to 'off'. Do not translate into your own language.
+#: inc/functions/extras.php:28
+msgctxt "Poppins font: on or off"
+msgid "on"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by Merriweather, translate this to 'off'. Do not translate into your own language.
+#: inc/functions/extras.php:34
+msgctxt "Crimson Text font: on or off"
+msgid "on"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-single.php:23
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/content-single.php:34
+msgid "Pages:"
+msgstr ""
